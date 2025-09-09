@@ -2,16 +2,36 @@ using UnityEngine;
 
 public class ZombieAI : MonoBehaviour
 {
-    public GameObject tr;
-    private Rigidbody2D rb;
-    private float speed = 200f;
+    private float health = 200.0f;
+    private float speed = 300.0f;
+
+    private Rigidbody2D rigid;
+    public GameObject player;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rigid = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
     private void FixedUpdate()
     {
-        rb.linearVelocity = tr.transform.position * Time.deltaTime * speed;
+        if (player != null)
+        {
+            Vector2 direction = player.transform.position - transform.position;
+
+            rigid.linearVelocity =  speed * Time.deltaTime * direction.normalized;
+        }
+
     }
+    public void DamageZombie(float damage)
+    {
+        health -= damage;
+        Debug.Log("ױן חמלבט" + health);
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
+

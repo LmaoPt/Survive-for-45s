@@ -19,4 +19,5 @@ public class MovePlayer : MonoBehaviour
     {
         rb.linearVelocity = vectorMove * speed * Time.deltaTime;
     }
+    
 }
