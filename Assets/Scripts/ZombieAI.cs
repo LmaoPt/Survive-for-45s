@@ -4,6 +4,7 @@ public class ZombieAI : MonoBehaviour
 {
     private float health = 200.0f;
     private float speed = 300.0f;
+    public float damageZombie = 10.0f;
 
     private Rigidbody2D rigid;
     public GameObject player;
