@@ -7,9 +7,9 @@ public class RayCast : MonoBehaviour
 {
     public Camera cam;
     //public LineRenderer line;
+    public ParticleSystem partical;
 
     private float damagePlayer = 10.0f;
-
 
     /*public void Start()
     {
@@ -29,12 +29,14 @@ public class RayCast : MonoBehaviour
 
         if (hit.collider != null && Input.GetMouseButton(0))
         {
+            partical.Play();
             if (hit.collider.CompareTag("Zombie"))
             {
                 ZombieAI zombie = hit.collider.GetComponent<ZombieAI>();
                 zombie.DamageZombie(damagePlayer);
 
             }
+            partical.Stop();
         }
     }
 

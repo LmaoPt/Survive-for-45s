@@ -7,7 +7,7 @@ public class mobSpawn : MonoBehaviour
     [SerializeField] GameObject[] ob;
     private float spawnDelay = 3.0f;
     
-    private float timer = 0; 
+    private float timer = 0;
     void Update()
     {
         if(timer > 0)
