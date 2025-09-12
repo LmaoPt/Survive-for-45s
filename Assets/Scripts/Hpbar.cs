@@ -1,5 +1,5 @@
 using UnityEngine;
-using Unity.UI;
+using UnityEngine.UI;
 
 public class Hpbar : MonoBehaviour
 {
@@ -7,7 +7,7 @@ public class Hpbar : MonoBehaviour
     private float currentHp;
     
 
-    public UnityEngine.UI.Image image;
+    public Image image;
     public void Start()
     {
         currentHp = MaxHp;
