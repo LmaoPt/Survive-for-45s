@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 00000000000000000000000000000000
+  productGUID: 1a03a0632a631cb4ea47b30a8857e34d
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -930,7 +930,7 @@ PlayerSettings:
   cloudProjectId: e706e300-bd20-4bb8-bc1f-7cf58bd58491
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: Survive for 45s
   organizationId: lmaopt
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8946367336225328290}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.24, y: 4.1947174, z: -3}
+  m_LocalPosition: {x: -14.29, y: 4.58, z: -3}
   m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -58,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 8eceb1eb59c597644abe17cd2df1265e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,7 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7679204568696102770, guid: 36e8adb5ea9bb924d91d8c0ee8aa51eb, type: 3}
+  m_Sprite: {fileID: -7679204568696102770, guid: 36e8adb5ea9bb924d91d8c0ee8aa51eb,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -175,4 +176,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48862dc842d9d264f9096fa861784e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageZombie: 10
   player: {fileID: 0}
