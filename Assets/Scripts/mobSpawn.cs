@@ -20,7 +20,7 @@ public class mobSpawn : MonoBehaviour
             timer = spawnDelay;
             GameObject currentOb = ob[Random.Range(0, ob.Length - 1)];
             Vector2 sizeSpawn = transform.position + new Vector3(Random.Range(-sizeX, sizeX), Random.Range(-sizeY, sizeY));
-            Instantiate(currentOb, new Vector3(sizeSpawn.x, sizeSpawn.y, -10), Quaternion.identity);
+            Instantiate(currentOb, new Vector3(sizeSpawn.x, sizeSpawn.y, 0), Quaternion.identity);
         }
     }
 }
