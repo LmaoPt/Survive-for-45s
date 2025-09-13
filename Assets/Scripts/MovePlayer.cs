@@ -17,7 +17,7 @@ public class MovePlayer : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.linearVelocity = vectorMove * speed * Time.deltaTime;
+        rb.linearVelocity = vectorMove.normalized * speed * Time.deltaTime;
     }
     
 }
